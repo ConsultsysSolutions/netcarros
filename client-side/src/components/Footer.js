@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-
 import logo from './logomain.png';
 
-class Footer extends Component {
+class Footer extends Component{
   render(){
     return(
       <div>
