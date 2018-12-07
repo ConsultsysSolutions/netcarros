@@ -4,15 +4,27 @@
   "description": "Automobilistic auctions research engine.",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
+    "start": "node ./server.js",
+    "server": "nodemon ./server.js",
+=======
     "dev": "node ./server.js",
     "start": "nodemon ./server.js",
+>>>>>>> origin/master
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ConsultsysSolutions/netcarros.git"
   },
+<<<<<<< HEAD
+  "keywords": [
+    "npm"
+  ],
+  "author": "Thiago Silva <thiago@prism.com.br>",
+=======
   "author": "Thyago Casablancas <thiago@prism.com.br>",
+>>>>>>> origin/master
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ConsultsysSolutions/netcarros/issues"
@@ -20,7 +32,10 @@
   "homepage": "https://github.com/ConsultsysSolutions/netcarros#readme",
   "devDependencies": {
     "create-react-app": "^2.1.1",
+<<<<<<< HEAD
+=======
     "express": "^4.16.4",
+>>>>>>> origin/master
     "nodemon": "^1.18.7",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.2"
