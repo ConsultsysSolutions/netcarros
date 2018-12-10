@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from './logomain.png';
-import $ from 'jquery';
 
 class Menu extends Component {
-
-  componentDidMount(){
-    $(document).ready(function(){
-      $('.filtroTipos ul > a li').click(function(){
-        $('.filtroTipos ul > a li').removeClass("selected");
-        $(this).addClass("selected");
-      });
-    });
-  }
-
   render(){
     return(
       <div>
@@ -21,28 +12,31 @@ class Menu extends Component {
             <div className="container">
               <div className="row">
                 <div>
-                  <a href=""><img src={ logo } /></a>
+                  <Link to="/"><img src={ logo } /></Link>
                 </div>
                 <span id="detalhe"></span>
-                <ul>
-                  <li>
-                    <a href="">como funciona?</a>
-                  </li>
-                  <li>
-                    <a href="">politica de privacidade</a>
-                  </li>
-                  <li>
-                    <a href="">no meu estado</a>
-                  </li>
-                  <li>
-                    <a href="">noticias</a>
-                  </li>
-                  <li>
-                    <a href="">contato</a>
-                  </li>
-                  <a href=""><li className="btn btnBlue btnTop">login</li></a>
-                  <a href=""><li className="btn btnYellow btnTop">cadastre-se</li></a>
-                </ul>
+                  <ul>
+                    <li>
+                      <Link to="/">home</Link>
+                    </li>
+                    <li>
+                      <Link to="/sobre">como funciona?</Link>
+                    </li>
+                    <li>
+                      <Link to="/privacidade">politica de privacidade</Link>
+                    </li>
+                    <li>
+                      <Link to="/estado">no meu estado</Link>
+                    </li>
+                    <li>
+                      <Link to="/noticias">noticias</Link>
+                    </li>
+                    <li>
+                      <Link to="/contato">contato</Link>
+                    </li>
+                    <li className="btn btnBlue btnTop">login</li>
+                    <Link to="/cadastro"><li className="btn btnYellow btnTop">cadastre-se</li></Link>
+                  </ul>
               </div>
             </div>
           </nav>
