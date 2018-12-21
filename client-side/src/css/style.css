@@ -78,7 +78,9 @@ nav li a:hover{
   right: 184px;
   background-color: #ffc813;
 }
-
+footer{
+  border-top: solid 4px #ffc813;
+}
 footer *{
   color: #fff;
 }
@@ -106,6 +108,19 @@ footer *{
   opacity: .7;
   transition: .2s ease;
 }
+.btn-compartilhar{
+  position: absolute;
+  right: 0;
+  top: 25px;
+  color: #1aa3fa;
+}
+.btn-compartilhar:hover{
+  text-decoration: none;
+  color: #1aa3fa;
+  opacity: .6;
+  transition: ease .2s;
+}
+
 
 #logoFooter > #logomain,
 #logoFooter > #logoLeiloeiro{
@@ -362,13 +377,22 @@ footer{
   text-align: left;
   line-height: 38px;
 }
+h3.titleSection{
+  text-align: center;
+  width: 100%;
+  float: left;
+  color: #808080;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 
-.ranking{
+ .mainPage > section{
   width: 100%;
   border-bottom: solid 2px #ffc813;
   margin-bottom: 20px;
   padding: 20px 0;
   position: relative;
+  float: left;
 }
 .sliderRanking{
   width: 90%;
@@ -388,12 +412,7 @@ footer{
   left: 0;
 }
 .ranking h3{
-  text-align: center;
-  width: 100%;
-  float: left;
-  color: #808080;
-  font-weight: 500;
-  margin-bottom: 20px;
+
 }
 .ranking span{
   color: #000;
@@ -404,4 +423,78 @@ footer{
   height: 120px;
   float: left;
   margin: 0 10px;
+}
+#destaquesHome{
+  width: 100%;
+  padding: 0;
+}
+#destaquesHome li{
+  padding: 15px;
+}
+
+.item{
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #494949;
+}
+.item .imgDestaque{
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 180px;
+}
+.item .imgDestaque img{
+  width: 100%;
+  position: relative;
+  top: ;
+}
+.item .verMais a{
+  color: #fff;
+  padding: 10px 0;
+  background: #65b209;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+  transition: .2s ease;
+  -moz-transition: .2s ease;
+  -webkit-transition: .2s ease;
+}
+.item .verMais a:hover{
+  text-decoration: none;
+  opacity: .8;
+}
+.item span{
+  font-size: 14px;
+}
+.item h5{
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.item > small{
+  margin-bottom: 15px;
+  float: left;
+  width: 100%;
+}
+.item dl{
+  margin-bottom: 10px;
+}
+.item dl dt{
+  margin-bottom: 0;
+  line-height: 10px;
+}
+dl.lanceAtual dd{
+  font-size: 24px;
+  color: #65b209;
+  font-weight: 700;
+}
+dl.lanceAtual dd span{
+  color: #494949;
+  font-weight: 300;
+  padding-right: 5px;
+}
+dl.inicio dd{
+  font-weight: 700;
 }
