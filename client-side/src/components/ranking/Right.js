@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const Right = () => {
+const Right = (props) => {
   return (
     <div className="nextArrow" onClick={ props.goToNextSlide }>
       <i className="fas fa-angle-right fa-2x" aria-hidden="true"></i>
