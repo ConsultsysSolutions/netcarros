@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from './logomain.png';
 
 class Footer extends Component{
@@ -15,12 +17,12 @@ class Footer extends Component{
                 </div>
                 <div className="col-md-6" id="links">
                   <ul>
-                    <a href=""><li>como funciona?</li></a>
-                    <a href=""><li>politica de privacidade</li></a>
-                    <a href=""><li>no meu estado</li></a>
-                    <a href=""><li>contato</li></a>
-                    <a href=""><li>notícias</li></a>
-                    <a href=""><li>newsletter</li></a>
+                    <Link to="/sobre"><li>como funciona?</li></Link>
+                    <Link to="/privacidade"><li>politica de privacidade</li></Link>
+                    <Link to="/estado"><li>no meu estado</li></Link>
+                    <Link to="/contato"><li>contato</li></Link>
+                    <Link to="/noticias"><li>notícias</li></Link>
+                    <li>newsletter</li>
                   </ul>
 
                   <small className="centeredtxt">NetCarros 2018. Todos os direitos reservados. Desenvolvido por PrismIT.</small>
@@ -28,10 +30,10 @@ class Footer extends Component{
                 <div className="col-md-2" id="midias">
                   <small>siga nas mídias sociais</small>
                   <ul>
-                    <a href=""><li className=""><i className="fab fa-facebook"></i></li></a>
-                    <a href=""><li><i className="fab fa-instagram"></i></li></a>
-                    <a href=""><li><i className="fab fa-twitter"></i></li></a>
-                    <a href=""><li><i className="fab fa-linkedin"></i></li></a>
+                    <a href="" target="_blank"><li className=""><i className="fab fa-facebook"></i></li></a>
+                    <a href="" target="_blank"><li><i className="fab fa-instagram"></i></li></a>
+                    <a href="" target="_blank"><li><i className="fab fa-twitter"></i></li></a>
+                    <a href="" target="_blank"><li><i className="fab fa-linkedin"></i></li></a>
                   </ul>
                 </div>
               </div>
